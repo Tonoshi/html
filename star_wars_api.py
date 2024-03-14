@@ -26,6 +26,7 @@ class StarWarsApi:
     def get_planet(self, planet_id):
         planet_dict = self.get_entity('planets', planet_id)
         return Planet(planet_dict)
+
     def get_ship(self, ship_id):
-        ship_dict = self.get_entity('ships', ship_id)
+        ship_dict = self.get_entity('starships', ship_id)
         return Ship(ship_dict)
